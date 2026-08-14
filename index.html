@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Inteligência Artificial no Dia a Dia</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #111;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #222;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 { color: #00ff88; }
+        .botoes-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #333;
+            color: white;
+            border: 2px solid #00ff88;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #00ff88;
+            color: #111;
+        }
+        .caixa-resultado {
+            display: none;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Start by Alura - Quiz IA</h1>
+        
+        <!-- Caixa que mostra as perguntas -->
+        <div id="caixa-perguntas">
+            <p id="texto-pergunta">Carregando pergunta...</p>
+            <div id="botoes-alternativas" class="botoes-container"></div>
+        </div>
+
+        <!-- Caixa que mostra o resultado e história final -->
+        <div id="caixa-resultado" class="caixa-resultado">
+            <h2>Sua Reflexão Final</h2>
+            <p id="texto-resultado"></p>
+        </div>
+    </div>
+
+    <!-- Conectando o arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
