@@ -1,0 +1,70 @@
+/* 1. VARIÁVEIS DE COR DA ALURA (Incluindo os tons de azul da aula) */
+:root {
+    --cor-fundo: #050d1a;         /* Azul bem escuro para o fundo da página */
+    --cor-principal: #0b1a30;     /* Azul-escuro para a caixa do quiz */
+    --cor-secundaria: #15325b;    /* Azul intermediário para o fundo do botão */
+    --cor-destaque: #00d2ff;      /* Azul-claro para o efeito Hover */
+    --cor-texto: #ffffff;         /* Cor das letras (Branco) */
+}
+
+/* 2. CONFIGURANDO A COR DE FUNDO DA PÁGINA */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor-fundo); 
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Caixa principal do quiz */
+.container {
+    background-color: var(--cor-principal);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 { 
+    color: var(--cor-destaque); 
+}
+
+.botoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* 3. CONFIGURAÇÃO DO BOTÃO (Exatamente como pedido na aula) */
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    /* Aplica a transição de 0.3s apenas na cor de fundo */
+    transition: background-color 0.3s; 
+}
+
+/* 4. CONFIGURAÇÃO DO HOVER (Quando o mouse passa por cima) */
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+}
+
+/* Caixa do resultado final */
+.caixa-resultado {
+    display: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
