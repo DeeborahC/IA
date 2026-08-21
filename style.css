@@ -68,3 +68,19 @@ button:hover {
     line-height: 1.6;
     margin-top: 20px;
 }
+
+.cadeado-flutuante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  z-index: 9999;
+  opacity: 0.7;
+  pointer-events: none; /* Evita que o ícone bloqueie cliques na página */
+  transition: opacity 0.3s ease;
+}
+
+.cadeado-flutuante:hover {
+  opacity: 1.0;
+}
