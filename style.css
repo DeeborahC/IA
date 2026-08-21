@@ -77,8 +77,8 @@ body::after {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 90px;
-  height: 90px;
+  width: 110px;
+  height: 110px;
   z-index: 9999;
 }
 
