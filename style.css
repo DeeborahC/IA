@@ -69,13 +69,10 @@ button:hover {
     margin-top: 20px;
 }
 
-.cadeado-flutuante {
-  position: fixed !important;
-  bottom: 12px !important;    /* Distância da borda de baixo */
-  right: 12px !important;     /* Distância da borda da direita */
-  width: 20px !important;     /* Deixa a largura bem pequena */
-  height: 20px !important;    /* Deixa a altura bem pequena */
-  z-index: 99999 !important;  /* Garante que fica na frente de tudo */
-  opacity: 0.5 !important;    /* Deixa meio transparente para não tampar as letras */
-  pointer-events: none !important; /* Permite clicar no que estiver atrás do cadeado */
+body::after {
+  content: url('cadeado.svg');
+  display: block;
+  width: 300px; /* Altere o tamanho aqui */
+  margin: 20px auto; /* Centraliza a imagem no final */
 }
+
