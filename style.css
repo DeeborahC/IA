@@ -72,7 +72,7 @@ button:hover {
 body::after {
   content: url('cadeado.svg');
   display: block;
-  width: 300px; /* Altere o tamanho aqui */
+  width: 50px; /* Altere o tamanho aqui */
   margin: 20px auto; /* Centraliza a imagem no final */
 }
 
